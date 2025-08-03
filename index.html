@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A beginner-friendly example of an accessible and SEO-optimized HTML5 webpage." />
+  <meta name="keywords" content="HTML5, semantic HTML, accessibility, SEO, beginner web page" />
+  <meta name="author" content="Your Name" />
+  <title>Semantic HTML5 Web Page</title>
+</head>
+<body>
+
+  
+  <header role="banner">
+    <h1>Learn Semantic HTML5</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    
+    <section id="introduction" aria-labelledby="introduction-heading">
+      <h2 id="introduction-heading">Introduction</h2>
+      <p>This simple web page demonstrates how to use semantic HTML5, enhance accessibility for assistive technologies, and apply SEO-friendly practices for better discoverability.</p>
+    </section>
+
+    <section id="benefits" aria-labelledby="benefits-heading">
+      <h2 id="benefits-heading">Why Semantic HTML Matters</h2>
+      
+      <article aria-labelledby="structure-heading">
+        <h3 id="structure-heading">1. Clear Document Structure</h3>
+        <p>Semantic tags define the role of each section, making content easier to understand for users and machines alike.</p>
+      </article>
+
+      <article aria-labelledby="accessibility-heading">
+        <h3 id="accessibility-heading">2. Improved Accessibility</h3>
+        <p>Using proper landmarks like <code>&lt;nav&gt;</code> and <code>&lt;main&gt;</code> helps screen readers navigate efficiently.</p>
+      </article>
+
+      <article aria-labelledby="seo-heading">
+        <h3 id="seo-heading">3. SEO Optimization</h3>
+        <p>Search engines use headings and content hierarchy to better understand and rank your page.</p>
+      </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact </h2>
+      <p>If you'd like to learn more, feel free to reach out to me using the form below.</p>
+      
+      <form aria-label="Contact form">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Benson Murage Maina. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>
